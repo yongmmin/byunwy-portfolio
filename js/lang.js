@@ -13,7 +13,7 @@ if (getCookie("lang")) {
   langstring = userLang.split("-")[0];
   lang = "lang=" + langstring;
   document.cookie = lang;
-  redirect(langstring);
+  // redirect(langstring);
 }
 
 /*
