@@ -13,7 +13,7 @@ if (getCookie("lang")) {
   langstring = userLang.split("-")[0];
   lang = "lang=" + langstring;
   document.cookie = lang;
-  // redirect(langstring);
+  redirect(langstring);
 }
 
 /*
@@ -42,10 +42,10 @@ function redirect(actuallang) {
   var url = "/";
   switch (actuallang) {
     case "ko":
-      url = "https://www.clasleather.com/";
+      url = "https://byunwy.com/";
       break;
     default:
-      url = "https://www.clasleather.com/en/";
+      url = "https://byunwy.com/";
       break;
   }
   window.location.replace(url);
